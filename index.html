@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Films Search</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous"> 
+</head>
+
+<body>
+        <nav>
+                <div class="toggle">
+                      <i class="fas fa-bars menu" aria-hidden= "true"></i> 
+               </div>
+                <ul class="ul-1">
+                    <li class="li-1"><a href="#">Home</a></li>
+                    <li class="li-1"><a href="#">About</a></li>
+                    <li class="li-1"><a href="#">Services</a></li>
+                    <li class="li-1"><a href="#">Portfolio</a></li>
+                    <li class="li-1"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+    <h1 class="tracking-in-contract-bck">Welcome to our films website </h1>
+    <form class="searchform cf" id="search-form">
+        <input type="text" placeholder="what you looking for?" id="input-order">
+        <button type="submit">Search</button>
+    </form>
+
+    <div class="film-list">
+        <ul id="search-results"></ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="js/json.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
