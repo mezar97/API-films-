@@ -309,3 +309,27 @@ a:hover {
     }
   }
   
+
+.link{
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 70px;
+    padding: 10px;
+    overflow: hidden;
+    border: none;
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+    font: normal 16px/1 "Times New Roman", Times, serif;
+    color: rgba(255,255,255,1);
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+     background: #000000;
+    }
+
+a:hover{
+    transform: translateY(-10px) scale(1.2);
+    transition: all .5s;
+    opacity: 0.4;
+}    

@@ -13,23 +13,23 @@
              r: 'json'
          };
          $.getJSON(url,rules,function(data){
-             console.log(data);
              showResults(data.Search);
          });
      } 
 
      
-     function showResults(data){    
+     function showResults(data){
+         
         $("#search-results").html("");  
          $.each(data,function(i,value){
              $('#search-results').append(` <li> 
              <a class="" href="#">
             <fieldset><img class="films" src=${value.Poster} alt=" OBS!! Sorry!! photo not found"></fieldset>
              </a>
-
              <div class="film-info">
                  <span><hr> <a href="#">${value.Title} <hr>
-                 ${value.Year}</a> <hr> </span>
+                 ${value.Year}</a> <hr> 
+                 <a href="http://www.imdb.com/title/${value.imdbID}" class="link" target="_blank">Watch now !!</a> </span>
              </div>
              
          </li>`);
