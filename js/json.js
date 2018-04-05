@@ -6,7 +6,7 @@
      });
 
      function getRequest(input){
-         var url = "http://www.omdbapi.com/?";
+         var url = "https://www.omdbapi.com/?";
          var rules = {
              apikey: '72812fa9',
              s: input,
