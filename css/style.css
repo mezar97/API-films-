@@ -1,11 +1,11 @@
 body {
-    background-color: rgb(43, 40, 221);
+    background-color: rgb(0, 0, 0);
     color: #fff;
     margin: 0;
 }
 nav{
     width: 100%;
-    background: #00316b
+    background: #00316b;
 }
 
 .ul-1{
@@ -128,9 +128,9 @@ a:visited {
 
 .searchform input:focus {
     outline: none;
-    box-shadow: 0 0 4px #0d76be inset;
-    -moz-box-shadow: 0 0 4px #0d76be inset;
-    -webkit-box-shadow: 0 0 4px #0d76be inset;
+    box-shadow: 0 0 4px #00316b inset;
+    -moz-box-shadow: 0 0 4px #00316b inset;
+    -webkit-box-shadow: 0 0 4px #00316b inset;
 }
 
 .searchform input::-webkit-input-placeholder {
@@ -144,13 +144,13 @@ a:visited {
 }
 
 .searchform button {
-    background: rgb(52, 173, 236);
-    background: -moz-linear-gradient(top, rgba(52, 173, 236, 1) 0%, rgba(38, 145, 220, 1) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(52, 173, 236, 1)), color-stop(100%, rgba(38, 145, 220, 1)));
-    background: -webkit-linear-gradient(top, rgba(52, 173, 236, 1) 0%, rgba(38, 145, 220, 1) 100%);
-    background: -o-linear-gradient(top, rgba(52, 173, 236, 1) 0%, rgba(38, 145, 220, 1) 100%);
-    background: -ms-linear-gradient(top, rgba(52, 173, 236, 1) 0%, rgba(38, 145, 220, 1) 100%);
-    background: linear-gradient(to bottom, rgba(52, 173, 236, 1) 0%, rgba(38, 145, 220, 1) 100%);
+    background: #00316b;
+    background: -moz-linear-gradient(top, #00316b 0%, rgba(38, 145, 220, 1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00316b), color-stop(100%, rgba(38, 145, 220, 1)));
+    background: -webkit-linear-gradient(top, #00316b 0%, rgba(38, 145, 220, 1) 100%);
+    background: -o-linear-gradient(top, #00316b 0%, rgba(38, 145, 220, 1) 100%);
+    background: -ms-linear-gradient(top, #00316b 0%, rgba(38, 145, 220, 1) 100%);
+    background: linear-gradient(to bottom, #00316b 0%, rgba(38, 145, 220, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34adec', endColorstr='#2691dc', GradientType=0);
     border: none;
     color: #fff;
@@ -182,18 +182,19 @@ fieldset{
     width: 56%;
     border-color: rgba(181, 14, 14, 1);
     border: 3px solid;
-    margin-top: 135px;
+    background-color: white; 
 }
 
 .film-list{
     position: absolute;
     bottom: 0;
-    width: 90%;
+    width: 77%;
     height: 80%;
     bottom: 0;
-    left: 10%;
+    left: 17%;
     top:  55%;
     display: flex;
+    padding-top: 90px;
 }
 
 .film-list ul {
@@ -207,7 +208,12 @@ fieldset{
     list-style-type: none;
     float: left;
     width: 320px;
+    height: 480px;
     margin-bottom: 40px;
+}
+
+.films{
+    color: black;
 }
 
 .film-list ul li .films {
@@ -232,6 +238,7 @@ fieldset{
     color: #ffffff;
     display: block;
     font-size: 22px;
+    text-align: center;
 }
 
 
@@ -325,7 +332,7 @@ a:hover {
     text-align: center;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
-     background: #000000;
+     background: #494fa3;
     }
 
 a:hover{
@@ -333,3 +340,18 @@ a:hover{
     transition: all .5s;
     opacity: 0.4;
 }    
+
+footer {
+    margin-top: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: #00316b;
+    color: white;
+}
+
+footer a {
+    color: red;
+}
